@@ -1,0 +1,30 @@
+{
+	"BUILD_DIR" : "E:/gitHub/WeChat_Maye/out/build/x64-Debug/WeChat_autogen",
+	"CMAKE_BINARY_DIR" : "E:/gitHub/WeChat_Maye/out/build/x64-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "E:/gitHub/WeChat_Maye/out/build/x64-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "E:/gitHub/WeChat_Maye",
+	"CMAKE_SOURCE_DIR" : "E:/gitHub/WeChat_Maye",
+	"INCLUDE_DIR" : "E:/gitHub/WeChat_Maye/out/build/x64-Debug/WeChat_autogen/include",
+	"INPUTS" : 
+	[
+		"E:/gitHub/WeChat_Maye/assets/images/bubble-chk.png",
+		"E:/gitHub/WeChat_Maye/assets/images/more2.png",
+		"E:/gitHub/WeChat_Maye/assets/images/contacts-chk.png",
+		"E:/gitHub/WeChat_Maye/assets/images/bubble.png",
+		"E:/gitHub/WeChat_Maye/assets/images/more.png",
+		"E:/gitHub/WeChat_Maye/assets/images/more-hover.png",
+		"E:/gitHub/WeChat_Maye/assets/images/default_profile.jpg",
+		"E:/gitHub/WeChat_Maye/assets/images/more2-hover.png",
+		"E:/gitHub/WeChat_Maye/assets/images/contacts.png"
+	],
+	"LOCK_FILE" : "E:/gitHub/WeChat_Maye/out/build/x64-Debug/CMakeFiles/WeChat_autogen.dir/AutoRcc_assets_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "assets" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_assets.cpp",
+	"RCC_EXECUTABLE" : "D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "E:/gitHub/WeChat_Maye/out/build/x64-Debug/CMakeFiles/WeChat_autogen.dir/AutoRcc_assets_EWIEGA46WW_Used.txt",
+	"SOURCE" : "E:/gitHub/WeChat_Maye/assets.qrc",
+	"VERBOSITY" : 0
+}

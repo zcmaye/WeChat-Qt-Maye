@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/images/default_profile.jpg</file>
+        <file>assets/images/bubble.png</file>
+        <file>assets/images/bubble-chk.png</file>
+        <file>assets/images/contacts.png</file>
+        <file>assets/images/contacts-chk.png</file>
+        <file>assets/images/more.png</file>
+        <file>assets/images/more2.png</file>
+        <file>assets/images/more2-hover.png</file>
+        <file>assets/images/more-hover.png</file>
+    </qresource>
+</RCC>
