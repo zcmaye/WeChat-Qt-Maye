@@ -36,7 +36,9 @@ void SLeftToolBar::init()
 	m_more2Btn->setObjectName("more2Btn");
 	m_more2Btn->setCheckable(true);
 
-	//m_vlayout->setContentsMargins(0, 0, 0, 0);
+	auto margins = m_vlayout->contentsMargins();
+	margins.setTop(37);
+	m_vlayout->setContentsMargins(margins);
 	m_vlayout->addWidget(m_profileLab);
 	m_vlayout->addWidget(m_chatBtn);
 	m_vlayout->addWidget(m_contactsBtn);

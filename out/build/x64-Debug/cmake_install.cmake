@@ -1,8 +1,8 @@
-# Install script for directory: E:/gitHub/WeChat_Maye
+# Install script for directory: E:/GitHub/WeChat-Qt-Maye
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "E:/gitHub/WeChat_Maye/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "E:/GitHub/WeChat-Qt-Maye/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/gitHub/WeChat_Maye/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/GitHub/WeChat-Qt-Maye/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

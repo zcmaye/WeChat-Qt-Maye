@@ -11,7 +11,9 @@
 #define SMAINWINDOW_H_
 
 #include <QWidget>
-#include"SLeftToolBar.h"
+#include "SLeftToolBar.h"
+#include "SCenterStackedWidget.h"
+#include "SRightWidget.h"
 class SMainWindow : public QWidget
 {
 	Q_OBJECT
@@ -20,6 +22,8 @@ public:
 	void init();
 private:
 	SLeftToolBar* m_leftToolBar = nullptr;
+	SCenterStackedWidget* m_centerStacked;
+	SRightWidget* m_rightWidget = nullptr;
 };
 
 #endif // !SMAINWINDOW_H_

@@ -6,5 +6,6 @@ int main(int argc, char *argv[])
     SMainWindow w;
     w.show();
 
+
     return a.exec();
 }

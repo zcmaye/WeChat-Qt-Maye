@@ -9,5 +9,13 @@
         <file>assets/images/more2.png</file>
         <file>assets/images/more2-hover.png</file>
         <file>assets/images/more-hover.png</file>
+        <file>assets/images/searchIcon.png</file>
+        <file>assets/images/add.png</file>
+        <file>assets/images/close.png</file>
+        <file>assets/images/close-hover.png</file>
+        <file>assets/images/maxshow.png</file>
+        <file>assets/images/minshow.png</file>
+        <file>assets/images/pushpin.png</file>
+        <file>assets/images/pushpin-chk.png</file>
     </qresource>
 </RCC>
