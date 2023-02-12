@@ -1,16 +1,16 @@
 The system is: Windows - 10.0.19044 - AMD64
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: D:/MySoftWare/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe 
+Compiler: D:/MySoftware/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.32.31326/bin/Hostx64/x64/cl.exe 
 Build flags: 
 Id flags:  
 
 The output was:
 0
-用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.34.31937 版
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.32.31332 版
 版权所有(C) Microsoft Corporation。保留所有权利。
 
 CMakeCXXCompilerId.cpp
-Microsoft (R) Incremental Linker Version 14.34.31937.0
+Microsoft (R) Incremental Linker Version 14.32.31332.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 /out:CMakeCXXCompilerId.exe 
@@ -21,22 +21,22 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "E:/GitHub/WeChat-Qt-Maye/out/build/x64-Debug/CMakeFiles/3.24.202208181-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "E:/gitHub/WeChat_Maye/out/build/x64-Debug/CMakeFiles/3.22.22040401-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: E:/GitHub/WeChat-Qt-Maye/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: E:/gitHub/WeChat_Maye/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MySoftWare/Microsoft Visual Studio/2022/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_30884 && [1/2] Building CXX object CMakeFiles\cmTC_30884.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_30884.exe
+Run Build Command(s):D:/MySoftware/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_65d32 && [1/2] Building CXX object CMakeFiles\cmTC_65d32.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_65d32.exe
 
 
 
 Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
-Change Dir: E:/GitHub/WeChat-Qt-Maye/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: E:/gitHub/WeChat_Maye/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MySoftWare/Microsoft Visual Studio/2022/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_1d6f5 && [1/2] Building CXX object CMakeFiles\cmTC_1d6f5.dir\src.cxx.obj
-E:\GitHub\WeChat-Qt-Maye\out\build\x64-Debug\CMakeFiles\CMakeTmp\src.cxx(17): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
-[2/2] Linking CXX executable cmTC_1d6f5.exe
+Run Build Command(s):D:/MySoftware/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_4eb55 && [1/2] Building CXX object CMakeFiles\cmTC_4eb55.dir\src.cxx.obj
+E:\gitHub\WeChat_Maye\out\build\x64-Debug\CMakeFiles\CMakeTmp\src.cxx(17): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
+[2/2] Linking CXX executable cmTC_4eb55.exe
 
 
 Source file was:

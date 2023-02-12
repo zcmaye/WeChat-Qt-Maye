@@ -17,5 +17,17 @@
         <file>assets/images/minshow.png</file>
         <file>assets/images/pushpin.png</file>
         <file>assets/images/pushpin-chk.png</file>
+        <file>assets/images/chat/chatHistory.png</file>
+        <file>assets/images/chat/chatHistory-hover.png</file>
+        <file>assets/images/chat/emoji.png</file>
+        <file>assets/images/chat/emoji-hover.png</file>
+        <file>assets/images/chat/file.png</file>
+        <file>assets/images/chat/file-hover.png</file>
+        <file>assets/images/chat/screenshot.png</file>
+        <file>assets/images/chat/screenshot-hover.png</file>
+        <file>assets/images/chat/videoChat.png</file>
+        <file>assets/images/chat/videoChat-hover.png</file>
+        <file>assets/images/chat/voiceChat.png</file>
+        <file>assets/images/chat/voiceChat-hover.png</file>
     </qresource>
 </RCC>
