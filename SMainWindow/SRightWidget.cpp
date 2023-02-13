@@ -48,6 +48,19 @@ QWidget* SRightWidget::CreateRightBottomWidget()
 	initChatView(m_msgShowWidget, "我是顽石老师");
 	initChatView(m_msgShowWidget, "大手大脚付款了");
 	initChatView(m_msgShowWidget, "你是谁，我不知道");
+	QString str = R"(@全体成员 还在担心学习编程没有方向吗？来长风老师的课堂，揭秘核心技术
+今晚课题：C / C++ 互联网核心技术大揭秘
+1、Windows服务器开发
+2、Linux服务器开发
+3、Web网页服务器
+4、HTTP服务器
+必学指数 : ★★★★★★★★★★（十颗星）
+---- - 【课程相当精彩】
+主讲老师：顿开教育 【C / C++高级工程师】 - 长风老师
+上课时间：今晚20点整
+课堂直达链接：http ://q.occloud.net/oTXzMw
+看到快去课堂！别错过精彩部分)";
+	initChatView(m_msgShowWidget, str);
 
 	//表情栏
 	m_emojiBtn = new QPushButton;
@@ -136,4 +149,5 @@ void SRightWidget::initChatView(QListWidget* w, const QString& text)
 
 	item->setSizeHint(QSize(0, bubble->textHeight() + 3 * 12));
 	//w->adjustSize();
+	w->scrollToBottom();
 }

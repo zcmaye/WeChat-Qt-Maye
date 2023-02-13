@@ -35,18 +35,24 @@ protected:
 	void updateSize();
 	bool fullDisplay()
 	{
-		return (m_textSize.width() < width() - bubbleRect.x() - 2 * m_textMargin);
+		return (m_textSize.width() < width() - m_bubbleRect.x() - 2 * m_textMargin);
 	}
+	QList<int> textWidthList();
+
+	void updateTextRect();
 private:
 	const ContactsInfo* m_contacts = nullptr;
 	const SChatMessage* m_msg = nullptr;
 
-	BubbleType m_type = BubbleRight;
-	QRect profileRect;		//头像矩形
-	QRect bubbleRect;		//气泡矩形
-	QPolygon polygon;		//小三角形
-	int m_textMargin = 12;	//文本距离气泡左边的距离
-	QSize m_textSize;		//文本尺寸
+	BubbleType	m_type = BubbleRight;
+	QRect		m_profileRect;		//头像矩形
+	QRect		m_bubbleRect;		//气泡矩形
+	QList<QPointF> m_points;		//小三角形
+	int			m_textMargin = 12;	//文本距离气泡左边的距离
+	QRect		m_textRect;			//文本矩形
+	QSize		m_textSize;			//文本尺寸
+
+	QRect		m_textRect1;			//文本矩形
 };
 
 #endif // !SCHATBUBBLE_H_
