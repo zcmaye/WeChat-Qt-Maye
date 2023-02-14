@@ -141,9 +141,11 @@ WeChat_autogen/timestamp: \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/QLabel \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/QLineEdit \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/QListView \
+	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/QListWidgetItem \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/QPushButton \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/QStackedWidget \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/QStyledItemDelegate \
+	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/QTextEdit \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/QVBoxLayout \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/QWidget \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qabstractbutton.h \
@@ -160,6 +162,7 @@ WeChat_autogen/timestamp: \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qlayoutitem.h \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qlineedit.h \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qlistview.h \
+	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qlistwidget.h \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qpushbutton.h \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qrubberband.h \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qsizepolicy.h \
@@ -170,6 +173,7 @@ WeChat_autogen/timestamp: \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qstyleoption.h \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qtabbar.h \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qtabwidget.h \
+	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qtextedit.h \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
 	D:/MySoftware/Qt/Qt6/6.2.4/msvc2019_64/include/QtWidgets/qwidget.h \

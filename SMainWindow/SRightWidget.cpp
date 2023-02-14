@@ -39,7 +39,7 @@ void SRightWidget::init()
 QWidget* SRightWidget::CreateRightBottomWidget()
 {
 	m_msgShowWidget = new QListWidget;
-	m_msgShowWidget->setMinimumHeight(10);
+	m_msgShowWidget->setMinimumHeight(20);
 	m_msgShowWidget->setSelectionMode(QListWidget::SelectionMode::NoSelection);
 	m_msgShowWidget->setFocusPolicy(Qt::FocusPolicy::NoFocus);
 	m_msgShowWidget->setVerticalScrollMode(QListWidget::ScrollMode::ScrollPerPixel);
@@ -47,7 +47,12 @@ QWidget* SRightWidget::CreateRightBottomWidget()
 	initChatView(m_msgShowWidget, "hello wrold");
 	initChatView(m_msgShowWidget, "我是顽石老师");
 	initChatView(m_msgShowWidget, "大手大脚付款了");
-	initChatView(m_msgShowWidget, "你是谁，我不知道");
+	for (int i = 0; i < 200; i++)
+	{
+		initChatView(m_msgShowWidget, "你是谁，我不知道🤭");
+	}
+
+
 	QString str = R"(@全体成员 还在担心学习编程没有方向吗？来长风老师的课堂，揭秘核心技术
 今晚课题：C / C++ 互联网核心技术大揭秘
 1、Windows服务器开发
@@ -142,12 +147,14 @@ void SRightWidget::initChatView(QListWidget* w, const QString& text)
 	auto msg = new SChatMessage(text, QDateTime::currentDateTime().toString("yyyy/MM/dd hh:mm:ss"));
 
 	auto bubble = new SChatBubble();
-	bubble->setMessage(contacts, msg, SChatBubble::BubbleType::BubbleRight);
+	bubble->setMessage(contacts, msg, SChatBubble::BubbleType(rand()%2));
 
-	auto item = new QListWidgetItem(w);
-	w->setItemWidget(item, bubble);
+	w->addItem(bubble);
+	w->setItemWidget(bubble, bubble);
 
-	item->setSizeHint(QSize(0, bubble->textHeight() + 3 * 12));
-	//w->adjustSize();
+	//auto item = new QListWidgetItem(w);
+	//w->setItemWidget(item, bubble);
+
+	//item->setSizeHint(QSize(0, bubble->textHeight() + 3 * 12));
 	w->scrollToBottom();
 }

@@ -11,9 +11,11 @@
 #define SCHATBUBBLE_H_
 
 #include <QLabel>
+#include <QListWidgetItem>
+#include <QTextEdit>
 class ContactsInfo;
 class SChatMessage;
-class SChatBubble : public QLabel
+class SChatBubble : public QLabel,public QListWidgetItem
 {
 	Q_OBJECT
 public:
@@ -26,20 +28,19 @@ public:
 	explicit SChatBubble(QWidget* parent = nullptr);
 	void init();
 	void setMessage(const ContactsInfo* info, const  SChatMessage* msg, SChatBubble::BubbleType type = SChatBubble::BubbleLeft);
-	int textHeight()const { return m_textSize.height(); };
+	int textHeight()const ;
 protected:
 	void paintEvent(QPaintEvent* ev)override;
 	void resizeEvent(QResizeEvent* ev)override;
 	//void mousePressEvent(QMouseEvent* ev) { adjustSize(); };
-	QSize textSize() const;
-	void updateSize();
-	bool fullDisplay()
-	{
-		return (m_textSize.width() < width() - m_bubbleRect.x() - 2 * m_textMargin);
-	}
-	QList<int> textWidthList();
 
-	void updateTextRect();
+
+	void updateBubbleSize();
+
+	void updateTextRect();			//文本输出实际矩形区域
+	QList<int> textWidthList()const;
+	int lineNumber()const;			//消息文本总行数
+	int realLineNumber()const;		//消息文本实际行数(不能完全显示，换行之后的)
 private:
 	const ContactsInfo* m_contacts = nullptr;
 	const SChatMessage* m_msg = nullptr;
@@ -50,9 +51,9 @@ private:
 	QList<QPointF> m_points;		//小三角形
 	int			m_textMargin = 12;	//文本距离气泡左边的距离
 	QRect		m_textRect;			//文本矩形
-	QSize		m_textSize;			//文本尺寸
 
-	QRect		m_textRect1;			//文本矩形
+	int _xOffset = 0;
+	int _yOffset = 0;
 };
 
 #endif // !SCHATBUBBLE_H_

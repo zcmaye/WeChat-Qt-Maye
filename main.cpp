@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 
 
 	SChatBubble cb;
-	cb.setFont(QFont("楷体", 18));
+	cb.QLabel::setFont(QFont("楷体", 18));
 	//cb.setMessage(contacts,msg,SChatBubble::BubbleRight);
 	cb.setMessage(contacts, msg);
 	cb.show();

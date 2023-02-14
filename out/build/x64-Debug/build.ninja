@@ -307,7 +307,7 @@ build WeChat_autogen\CDXGIGRBH5\qrc_ContactsAssets.cpp | ${cmake_ninja_workdir}W
 #############################################
 # Phony custom command for CMakeFiles\WeChat_autogen_timestamp_deps
 
-build CMakeFiles\WeChat_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\WeChat_autogen_timestamp_deps: phony D$:\MySoftware\Qt\Qt6\6.2.4\msvc2019_64\.\bin\moc.exe D$:\MySoftware\Qt\Qt6\6.2.4\msvc2019_64\.\bin\uic.exe D$:\MySoftware\Qt\Qt6\6.2.4\msvc2019_64\lib\Qt6Widgetsd.lib
+build CMakeFiles\WeChat_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\WeChat_autogen_timestamp_deps: phony D$:\MySoftware\Qt\Qt6\6.2.4\msvc2019_64\.\bin\uic.exe D$:\MySoftware\Qt\Qt6\6.2.4\msvc2019_64\.\bin\moc.exe D$:\MySoftware\Qt\Qt6\6.2.4\msvc2019_64\lib\Qt6Widgetsd.lib
 
 
 #############################################

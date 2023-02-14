@@ -26,17 +26,17 @@ The CXX compiler identification is MSVC, found in "E:/gitHub/WeChat_Maye/out/bui
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: E:/gitHub/WeChat_Maye/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MySoftware/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_65d32 && [1/2] Building CXX object CMakeFiles\cmTC_65d32.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_65d32.exe
+Run Build Command(s):D:/MySoftware/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ea794 && [1/2] Building CXX object CMakeFiles\cmTC_ea794.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_ea794.exe
 
 
 
 Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
 Change Dir: E:/gitHub/WeChat_Maye/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/MySoftware/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_4eb55 && [1/2] Building CXX object CMakeFiles\cmTC_4eb55.dir\src.cxx.obj
+Run Build Command(s):D:/MySoftware/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_a0253 && [1/2] Building CXX object CMakeFiles\cmTC_a0253.dir\src.cxx.obj
 E:\gitHub\WeChat_Maye\out\build\x64-Debug\CMakeFiles\CMakeTmp\src.cxx(17): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
-[2/2] Linking CXX executable cmTC_4eb55.exe
+[2/2] Linking CXX executable cmTC_a0253.exe
 
 
 Source file was:

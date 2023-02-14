@@ -7,7 +7,7 @@ ContactsInfo::ContactsInfo(const QString& username, const QString& signature, co
 	,profile_(profile)
 	,vipType_(VIPType(QRandomGenerator::global()->bounded(0,3)))
 {
-	qInfo() << "viptype" << vipType_;
+
 }
 
 QDebug operator<<(QDebug out, const ContactsInfo& info)
