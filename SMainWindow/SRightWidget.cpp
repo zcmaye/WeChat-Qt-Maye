@@ -4,6 +4,8 @@
 #include<QTextEdit>
 #include<QListWidget>
 #include<QPushButton>
+#include<QApplication>
+#include<QWindow>
 
 #include"SContacts/SChatBubble.h"	
 #include"SContacts/ContactsInfo.h"
@@ -21,16 +23,16 @@ void SRightWidget::init()
 
 	auto vlayout = new QVBoxLayout(this);
 	vlayout->setContentsMargins(0, 0, 0, 0);
-	vlayout->addWidget(m_rightTopBar);
+	vlayout->addWidget(CreateRightTopWidget());
 	vlayout->addWidget(CreateRightBottomWidget());
-	
+
 	setStyleSheet("background-color:rgb(245,245,245)");
 
 	connect(m_sendMsgBtn, &QPushButton::clicked, this, [=]()
 		{
 			initChatView(m_msgShowWidget, m_msgEdit->toPlainText());
-			m_msgEdit->clear();
-			m_msgShowWidget->scrollToBottom();
+	m_msgEdit->clear();
+	m_msgShowWidget->scrollToBottom();
 
 		});
 
@@ -43,29 +45,12 @@ QWidget* SRightWidget::CreateRightBottomWidget()
 	m_msgShowWidget->setSelectionMode(QListWidget::SelectionMode::NoSelection);
 	m_msgShowWidget->setFocusPolicy(Qt::FocusPolicy::NoFocus);
 	m_msgShowWidget->setVerticalScrollMode(QListWidget::ScrollMode::ScrollPerPixel);
+	m_msgShowWidget->setFrameShape(QFrame::NoFrame);
 
 	initChatView(m_msgShowWidget, "hello wrold");
 	initChatView(m_msgShowWidget, "我是顽石老师");
 	initChatView(m_msgShowWidget, "大手大脚付款了");
-	for (int i = 0; i < 200; i++)
-	{
-		initChatView(m_msgShowWidget, "你是谁，我不知道🤭");
-	}
-
-
-	QString str = R"(@全体成员 还在担心学习编程没有方向吗？来长风老师的课堂，揭秘核心技术
-今晚课题：C / C++ 互联网核心技术大揭秘
-1、Windows服务器开发
-2、Linux服务器开发
-3、Web网页服务器
-4、HTTP服务器
-必学指数 : ★★★★★★★★★★（十颗星）
----- - 【课程相当精彩】
-主讲老师：顿开教育 【C / C++高级工程师】 - 长风老师
-上课时间：今晚20点整
-课堂直达链接：http ://q.occloud.net/oTXzMw
-看到快去课堂！别错过精彩部分)";
-	initChatView(m_msgShowWidget, str);
+	initChatView(m_msgShowWidget, "你是谁，我不知道🤭");
 
 	//表情栏
 	m_emojiBtn = new QPushButton;
@@ -93,6 +78,7 @@ QWidget* SRightWidget::CreateRightBottomWidget()
 
 	//消息输入框
 	m_msgEdit = new QTextEdit;
+	m_msgEdit->setFrameShape(QFrame::NoFrame);
 
 	//发送消息
 	m_sendMsgBtn = new QPushButton("发送(&S)");
@@ -138,7 +124,91 @@ QPushButton#sendMsgBtn{background-color:rgb(233,233,233);border-radius:5px;font:
 QPushButton#sendMsgBtn:hover{background-color:rgb(210,210,210);}
 )");
 
+
+
 	return splitter;
+}
+
+QWidget* SRightWidget::CreateRightTopWidget()
+{
+	auto rightTopBar = new  QWidget;
+	rightTopBar->setFixedHeight(64);
+
+	m_conactsNameBtn = new QPushButton("Maye");
+
+	m_closeBtn = new QPushButton;
+	m_maxBtn = new QPushButton;
+	m_minBtn = new QPushButton;
+	m_topBtn = new QPushButton;
+
+	m_topBtn->setObjectName("topBtn");
+	m_topBtn->setCheckable(true);
+
+	m_minBtn->setObjectName("minBtn");
+	m_maxBtn->setObjectName("maxBtn");
+	m_closeBtn->setObjectName("closeBtn");
+
+	connect(m_closeBtn, &QPushButton::released, qApp, &QApplication::quit);
+	qInfo() << parentWidget() << parent();
+	if (parentWidget())
+	{
+		auto pw = parentWidget();
+		connect(m_maxBtn, &QPushButton::released, [=]
+			{
+				if (pw->isMaximized())
+				pw->showNormal();
+				else
+					pw->showMaximized();
+
+			});
+		connect(m_minBtn, &QPushButton::released, pw, &QWidget::showMinimized);
+		connect(m_topBtn, &QPushButton::toggled, pw, [=](bool check)
+			{
+				QWindow* pWin = pw->windowHandle();
+				if (pWin->flags().testFlag(Qt::WindowStaysOnTopHint))
+				{
+					pWin->setFlag(Qt::Widget);
+				}
+				else
+				{
+					pWin->setFlags(Qt::Widget);
+					pWin->setFlag(Qt::WindowStaysOnTopHint);
+				}
+			});
+	}
+
+
+	auto hlayout = new QHBoxLayout;
+	hlayout->setSpacing(0);
+	hlayout->setContentsMargins(0, 0, 2, 0);
+	hlayout->addWidget(m_topBtn);
+	hlayout->addWidget(m_minBtn);
+	hlayout->addWidget(m_maxBtn);
+	hlayout->addWidget(m_closeBtn);
+
+
+	auto glayout = new QGridLayout(rightTopBar);
+	glayout->setSpacing(0);
+	glayout->setContentsMargins(0, 0, 0, 0);
+
+	glayout->addWidget(m_conactsNameBtn, 0, 0, 2, 1);
+	//glayout->setColumnStretch(1, 0);
+	glayout->addLayout(hlayout, 0, 1);
+
+
+	rightTopBar->setStyleSheet(R"(
+QPushButton{border:none;text-align:left;}
+QPushButton#closeBtn{image:url(':/assets/images/close.png');}
+QPushButton#maxBtn{image:url(':/assets/images/maxshow.png');}
+QPushButton#minBtn{image:url(':/assets/images/minshow.png');}
+QPushButton#topBtn{image:url(':/assets/images/pushpin.png');}
+QPushButton#closeBtn:hover{image:url(':/assets/images/close-hover.png');background-color:rgb(251,115,115);}
+QPushButton#maxBtn:hover{background-color:rgb(226,226,226);}
+QPushButton#minBtn:hover{background-color:rgb(226,226,226);}
+QPushButton#topBtn:checked{image:url(':/assets/images/pushpin-chk.png');background-color:rgb(226,226,226);}
+QPushButton#closeBtn,QPushButton#maxBtn,QPushButton#minBtn,QPushButton#topBtn{min-width:32px;min-height:25px;max-width:32px;max-height:25px;}
+)");
+	return rightTopBar;
 }
 
 void SRightWidget::initChatView(QListWidget* w, const QString& text)
@@ -147,7 +217,7 @@ void SRightWidget::initChatView(QListWidget* w, const QString& text)
 	auto msg = new SChatMessage(text, QDateTime::currentDateTime().toString("yyyy/MM/dd hh:mm:ss"));
 
 	auto bubble = new SChatBubble();
-	bubble->setMessage(contacts, msg, SChatBubble::BubbleType(rand()%2));
+	bubble->setMessage(contacts, msg, SChatBubble::BubbleType(rand() % 2));
 
 	w->addItem(bubble);
 	w->setItemWidget(bubble, bubble);

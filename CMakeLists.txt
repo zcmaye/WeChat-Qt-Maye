@@ -23,12 +23,14 @@ aux_source_directory(./ Src_Root)
 aux_source_directory(./SMainWindow Src_SMainWindow)
 aux_source_directory(./SContacts Src_SContacts)
 aux_source_directory(./SCustomWidgets Src_SCustomWidgets)
+aux_source_directory(./SUtil Src_SUtil)
 
 add_executable(WeChat
   ${Src_Root}
   ${Src_SMainWindow}
   ${Src_SContacts}
   ${Src_SCustomWidgets}
+  ${Src_SUtil}
  "assets.qrc"
  "SContacts/ContactsAssets.qrc")
 

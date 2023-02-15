@@ -14,6 +14,8 @@ void SCenterStackedPage::init()
 	//使用样式绘制背景(QWidget 需要加上)
 	setAttribute(Qt::WA_StyledBackground, true);
 
+	m_contactsListView->setStyleSheet("border-right:1px solid red");
+
 	auto vlayout = new QVBoxLayout(this);
 	vlayout->addWidget(m_searchWidget);
 	vlayout->addWidget(m_contactsListView);

@@ -41,15 +41,15 @@ int main(int argc, char *argv[])
 	//4
 	//5)";
 
-	auto contacts = new ContactsInfo("十一期 江涛", "面包会有的，一切都会有的");
-	auto msg = new SChatMessage(str, QDateTime::currentDateTime().toString("yyyy/MM/dd hh:mm:ss"));
-
-
-	SChatBubble cb;
-	cb.QLabel::setFont(QFont("楷体", 18));
-	//cb.setMessage(contacts,msg,SChatBubble::BubbleRight);
-	cb.setMessage(contacts, msg);
-	cb.show();
+	//auto contacts = new ContactsInfo("十一期 江涛", "面包会有的，一切都会有的");
+	//auto msg = new SChatMessage(str, QDateTime::currentDateTime().toString("yyyy/MM/dd hh:mm:ss"));
+	//
+	//
+	//SChatBubble cb;
+	//cb.QLabel::setFont(QFont("楷体", 18));
+	////cb.setMessage(contacts,msg,SChatBubble::BubbleRight);
+	//cb.setMessage(contacts, msg);
+	//cb.show();
 
 
     return a.exec();

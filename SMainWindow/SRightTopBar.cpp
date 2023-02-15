@@ -16,6 +16,9 @@ void SRightTopBar::init()
 	//setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 	setFixedHeight(64);
 
+	auto rightTopBar = new  QWidget;
+	rightTopBar->setFixedHeight(64);
+
 	auto glayout = new QGridLayout(this);
 	glayout->setSpacing(0);
 	glayout->setContentsMargins(0, 0, 0, 0);

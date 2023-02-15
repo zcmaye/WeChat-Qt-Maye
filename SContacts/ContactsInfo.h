@@ -8,7 +8,7 @@ class ContactsInfo
 {
 public:
 	ContactsInfo() {};
-	ContactsInfo(const QString& username,const QString& signature ="这个人非常的懒，啥都没有写~", const QPixmap& profile = QPixmap(":/ContactsAssets/images/defaultProfile.png"));
+	ContactsInfo(const QString& username,const QString& signature ="这个人非常的懒，啥都没有写~", const QPixmap& profile = QPixmap(":/ContactsAssets/images/default_profile.jpg"));
 	friend QDebug operator<<(QDebug out, const ContactsInfo& info);
 	
 	enum VIPType {NoVIP,VIP,SVIP};
